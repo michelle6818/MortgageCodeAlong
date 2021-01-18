@@ -32,72 +32,78 @@
 <div class="container">
     <h1 class="mb-2">Loan Calcualtor</h1>
     <div class="row">
-        <div class="col loanform">
-            <div class="row">
-                <div class="col-xl">
-                    <label for="lAmount">Loan Amount:</label>
-                </div>
-                <div class="col-xl">
-                    <input type="number" value=15000 name="lAmount" id="loanAmount">
-                </div>
-                <div class="col-xl">
-                    <label for="lPayments">Payments:</label>
-                </div>
-                <div class="col-xl">
-                    <input type="number" value=60  name="lTerm" id="loanTerm">
-                </div>
-                <div class="col-xl">
-                    <label for="lRate">Rate:</label>
-                </div>
-                <div class="col-xl">
-                    <input type="number" value=3  name="lRate" id="loanRate">
-                </div>
-                <div class="row mt-3">
-                  <div class="col-xl">
-                    <button type="button" id="btnCalc" class="btn btn-primary">Calculate</button>
-                  </div>
-                  <div class="col-xl loanInfo">
-                      <div id="paymentTitle">
-                        <p>Your Monthly Payments</p>
-                      </div>
-                      <p id="payment"></p>
-                      <div class="row">
-                        <div class="col-xl">
-                          <label class="text-left">Total Principal</label>
-                        </div>
-                        <div class="col-xl text-right" id="totalPrincipal"></div>
-                      <div class="col-xl">
-                        <label class="text-left">Total Interest</label>
-                      </div>
-                      <div class="col-xl text-right" id="totalInterest"></div>
-                      <div class="col-xl">
-                        <label class="text-left">Total Cost</label>
-                      </div>
-                      <div class="col-xl text-right" id="totalCost"></div>
-                  
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <table class="table table-striped table-hover">
-                          <thead id="tableheader" class="bg-info text-white">
-                            <tr>
-                              <th>Month</th>
-                              <th>Payment</th>
-                              <th>Principal</th>
-                              <th>Interest</th>
-                              <th>Total Interest</th>
-                              <th>Balance</th>
-                            </tr>
-                          </thead>
-                          <tbody id="scheduleBody">
-                            <!--Payment Template Data will go here-->
-                            <!--<tr><td>....-->
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                </div>   
-       
+      <div class="col loanform">
+        <div class="row">
+          <div class="col-xl">
+            <label for="lAmount">Loan Amount:</label>
+          <div class="col-xl">
+           <input type="number" value=15000 name="lAmount" id="loanAmount">
+         </div>
+      <div class="col-xl">
+      <label for="lPayments">Payments:</label>
+      </div>
+      <div class="col-xl">
+      <input type="number" value=60  name="lTerm" id="loanTerm">
+        </div>
+          <div class="col-xl">
+          <label for="lRate">Rate:</label>
+        </div>
+        <div class="col-xl">
+        <input type="number" value=3  name="lRate" id="loanRate">
+        </div>
+        </div>
+        <div class="row mt-3">
+        <div class="col-xl">
+        <button type="button" id="btnCalc" class="btn btn-primary">Calculate</button>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="col-xl loanInfo">
+        <div id="paymentTitle">
+        <p>Your Monthly Payments</p>
+        </div>
+        <p id="payment"></p>
+        <div class="row">
+        <div class="col-xl">
+        <label class="text-left">Total Principal</label>
+        </div>
+        <div class="col-xl text-right" id="totalPrincipal">
+        </div>
+        <div class="col-xl">
+        <label class="text-left">Total Interest</label>
+        </div>
+        <div class="col-xl text-right" id="totalInterest">
+        </div>
+        <div class="col-xl">
+        <label class="text-left">Total Cost</label>
+        </div>
+        <div class="col-xl text-right" id="totalCost">
+        </div>          
+        </div>
+        <div class="row">
+        <div class="col">
+        <table class="table table-striped table-hover">
+        <thead id="tableheader" class="bg-info text-white">
+          <tr>
+          <th>Month</th>
+          <th>Payment</th>
+          <th>Principal</th>
+          <th>Interest</th>
+          <th>Total Interest</th>
+          <th>Balance</th>
+            </tr>
+          </thead>
+          <tbody id="scheduleBody">
+          <!--Payment Template Data will go here-->
+          <!--<tr><td>....-->
+          </tbody>
+          </table>
+        </div>
+      </div>
+      </div> 
+    </div>  
+</div>  
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
