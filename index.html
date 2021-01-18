@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Mortgage Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+
+
+  </head>
+  <body>
+    <!-- Navigation Section -->
+<nav class="navbar navbar-expand-sm navbar-dark" style="background-color: #002f4e;">
+    <a class="navbar-brand" href="#">Solve</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+        aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="solve.html">Solve</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="code.html">Code</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://github.com/michelle6818/Mortgage-Calculator">GitHub</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" target="_blank" href="https://michellelongworth-portfolio.netlify.app/index.html">Portfolio</a>
+          </li>
+        </ul>
+    </div>
+</nav>
+
+  <!-- Jumbotron section-->
+  <header>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container d-flex flex-column align-items-center aos-init aos-animate"
+    data-aos= "zoom-in"data-aos-delay= "100">
+      <h1 class="display-3">The Mortgage Calculator</h1>
+      <br>
+      <div class="row mb-0">
+        <div class="col">
+    </div>
+  </div>
+  </div>
+</header>
+
+<!-- This is where I lay out the UI for the exercise -->
+<div class="container">
+    <div class="row" div id="top">
+      <div class="col-4 mr-2 mt-2" div="leftside">
+        <div class="card mt-2">
+        <div class="row">
+          <div class="col ml-2">
+            <label for="loan">Loan Amount $:</label>
+          </div> 
+          <div class="col mr-1">
+            <input id="loan" type="number">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col ml-2">
+            <label for="term">Term (Months)</label> 
+            </div>
+            <div class="col mr-1">
+            <input id="term" type="number"> 
+            </div>
+        </div>
+            <div class="row">
+              <div class="col ml-2">
+            <label for="rate">Interest Rate %</label> 
+            </div>
+            <div class="col mr-1">
+            <input id="rate" type="number"> 
+           </div>
+            </div>
+            <br>
+        <div class="row mr-1 justify-content-end">
+            <button id="btnCalculate" class="btn btn-outline-dark">Calculate</button>
+            <!-- <button id="btnClear" class="btn btn-outline-primary">Clear</button> -->
+        </div> 
+       </div> 
+      </div> 
+
+    <div class="col-7 justify-content-end" id="rightside">
+      <div class="card">
+      <div class="row">
+        <div class="col">
+          <div class="row justify-content-center">
+            <h4>Your Monthly Payments</h4>
+          </div>
+          <div class="row justify-content-center pt-2 pb">
+           <h5 id="monthlyPmt" type="number"></h5>
+           </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col">
+        <div class="row">
+          <div class="col ml-5">
+          <h6>Total Principal:</h6>
+          </div>
+          <div class="col">
+            <div class="row">
+           <h6 id="totalPrin" type="number"></h6> 
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col ml-5">
+           <h6>Total Interest:</h6>
+           </div>
+           <div class="col">
+             <div class="row">
+           <h6 id="totalInt" type="number"></h6>
+             </div>
+           </div>
+        </div>
+        <div class="row">
+          <div class="col ml-5">
+           <h6>Total Cost:</h6>
+          </div>
+          <div class="col">
+             <div class="row">
+           <p id="totalCost" type="number"></p>
+       </div>
+    </div>
+</div>
+</div>
+    </div>
+      </div>
+    </div>
+    </div>
+<!-- table -->
+<div class="row">
+  <table class="table table-responsive-lg table-striped table-bordered mb-0 mt-3" tr style="background-color: lightblue strip">
+    <thead>
+      <tr>
+         <th scope="col"><strong>Month</strong></th>
+         <th scope="col"><strong>Payment</strong></th>
+         <th scope="col"><strong>Principal</strong></th>
+         <th scope="col"><strong>Interest</strong></th>
+         <th scope="col"><strong>Total Interest</strong></th>
+         <th scope="col"><strong>Balance</strong></th>
+        </tr>
+    </thead>            
+       <tbody id="theTable">
+        <tr scope="row">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        
+       </tbody>
+      </table>
+      </div>
+    </div>
